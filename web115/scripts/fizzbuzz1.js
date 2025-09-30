@@ -1,5 +1,5 @@
-// Wait until the page is fully loaded
-document.addEventListener("DOMContentLoaded", function () {
+// Wait until the entire page is fully loaded, including included HTML
+window.addEventListener("load", function () {
   const form = document.getElementById("nameForm");
   const output = document.getElementById("fizzbuzzOutput");
 
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Greeting
     output.textContent = `Hello ${first} ${middle} ${last}!\n\n`;
 
-    // Theme words (easy to change)
+    // Theme words
     const word3 = "EEK!";
     const word5 = "SCREAM!";
     const normalWord = "boo!";
@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Loop from 1 to 140
     for (let i = 1; i <= 140; i++) {
       let msg = "";
-
       if (i % 3 === 0) msg += word3 + " ";
       if (i % 5 === 0) msg += word5 + " ";
       if (msg === "") msg = normalWord;
