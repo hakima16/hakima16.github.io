@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FizzBuzz 2 Page</title>
+  <link rel="stylesheet" type="text/css" href="styles/default.css" />
+</head>
+<body>
+  <!-- Pulls in header.html -->
+  <div data-include="components/header.html"></div>
+
+  <main>
+    <h2>FizzBuzz 2</h2>
+
+    <!-- Greeting Section -->
+    <h3 id="greeting">Welcome to Hakima’s Hardworking Kangaroo!</h3>
+
+    <!-- User Input Form -->
+    <form id="nameForm">
+      <input type="text" id="first_name" placeholder="Enter your first name" required>
+      <input type="text" id="middle_initial" placeholder="M" maxlength="1">
+      <input type="text" id="last_name" placeholder="Enter your last name" required>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- FizzBuzz Output -->
+    <pre id="fizzbuzzOutput"></pre>
+  </main>
+
+  <!-- Pulls in footer.html -->
+  <div data-include="components/footer.html"></div>
+
+  <!-- Scripts -->
+  <script src="scripts/HTMLInclude.js"></script>
+  <script src="scripts/fizzbuzz2.js"></script>
+
+  <footer>
+    <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
+  </footer>
+</body>
+</html>
