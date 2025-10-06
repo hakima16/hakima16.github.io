@@ -1,10 +1,10 @@
 
 /* style.css */
-*,
-*::before,
-*::after {
+/* Apply border-box to all elements */
+* {
   box-sizing: border-box;
 }
+
 
 
 /* Body styles */
