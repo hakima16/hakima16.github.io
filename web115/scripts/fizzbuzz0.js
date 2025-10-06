@@ -1,14 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
+includeHTML(function() {
   const form = document.getElementById('nameForm');
+  if (!form) return; // only run if form exists
+
   const output = document.getElementById('fizzbuzzOutput');
   const greeting = document.getElementById('greeting');
 
-  // Only proceed if the form exists (prevents errors on other pages)
-  if (!form) return;
-
   form.addEventListener('submit', function(e) {
     e.preventDefault();
-
     const firstName = document.getElementById('first_name').value;
     const middleInitial = document.getElementById('middle_initial').value;
     const lastName = document.getElementById('last_name').value;
@@ -16,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let fullName = firstName;
     if (middleInitial) fullName += ' ' + middleInitial + '.';
     fullName += ' ' + lastName;
-
     greeting.textContent = `Hello, ${fullName}! Welcome to Hakima’s Hardworking Kangaroo!`;
 
     let result = '';
@@ -26,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
       else if (i % 5 === 0) result += 'Buzz\n';
       else result += i + '\n';
     }
-
     output.textContent = result;
   });
 });
+
 
