@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const total = parseInt(document.getElementById("total").value, 10);
     const defaultWord = document.getElementById("defaultWord").value;
 
-    if (divisors.some(d => isNaN(d.number) || d.number <= 0)) {
+    if (divisors.some((d) => isNaN(d.number) || d.number <= 0)) {
       alert("All divisors must be positive numbers.");
       return;
     }
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let result = "";
       let classes = [];
 
-      divisors.forEach(d => {
+      divisors.forEach((d) => {
         if (checkDivision(i, d.number)) {
           result += d.word + " ";
           classes.push(d.className);
