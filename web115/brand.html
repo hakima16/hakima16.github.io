@@ -1,58 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Metadata -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlowingRosa - Home</title>
-    <!-- Link to CSS files -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/layout.css">
-    <!-- Link to JavaScript file -->
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>GlowingRosa</h1>
-      <!-- Navigation Bar -->
-      <nav>
-        <ul>
-          <li><a href="brand.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-		 
-        </ul>
-      </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-      <section>
-        <h2>Welcome to GlowingRosa Hair Accessories</h2>
-        <p style="color: green;">
-          Our hair accessories are all original designs, handmade, 
-          and intended to be passed down for generations. Made of high 
-          quality fabrics, these hair accessories will stand the test of 
-          time and only get better with age.
-        </p>
-        <!-- Inline Image -->
-        <img src="images/glowingrosa.png" alt="GlowingRosa Logo">
-        <p>
-          "Welcome to GlowingRosa, where beauty meets craftsmanship. 
-          Explore our handcrafted hair accessories—each piece designed 
-          to elevate your style with radiant charm. Browse our collections 
-          now and discover the perfect accent for your unique glow."
-        </p>
-        <!-- Display date and time -->
-        <p id="date-time"></p>
-      </section>
-    </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowingRosa — WEB115</title>
+  <link rel="stylesheet" type="text/css" href="styles/default.css">
 
-    <!-- Footer -->
-    <footer>
-      <!-- Validator script -->
-      <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
-    </footer>
-  </body>
+  <style>
+    /* Apply brand colors inline for this page */
+    h2 {
+      color: #ff69b4; /* Primary Pink for main heading */
+    }
+
+    h3 {
+      color: #ff69b4; /* Primary Pink for section headings */
+    }
+
+    .accent {
+      color: #ffd700; /* Secondary Gold for highlights */
+      font-weight: bold;
+    }
+
+    .color-swatch {
+      display: inline-block;
+      width: 50px;
+      height: 20px;
+      margin-left: 10px;
+      border: 1px solid #000;
+      vertical-align: middle;
+    }
+
+    body {
+      background-color: #CCE7FF; /* Light blue background */
+      font-family: Arial, Verdana, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div data-include="components/header.html"></div>
+
+  <!-- Main content -->
+  <main>
+    <h2>GlowingRosa Brand Guide</h2>
+
+    <!-- Brand Mission -->
+    <section>
+      <h3>Brand Mission</h3>
+      <p>Our mission is to provide high-quality, handcrafted hair accessories that combine <span class="accent">beauty and craftsmanship</span> for lasting enjoyment.</p>
+    </section>
+
+    <!-- Color Scheme -->
+    <section>
+      <h3>Color Scheme</h3>
+      <ul>
+        <li>Primary Pink: #FF69B4 <span class="color-swatch" style="background-color:#FF69B4;"></span> – Used for headings and highlights</li>
+        <li>Secondary Gold: #FFD700 <span class="color-swatch" style="background-color:#FFD700;"></span> – Used for accents</li>
+        <li>Background Light Blue: #CCE7FF <span class="color-swatch" style="background-color:#CCE7FF;"></span> – Page background</li>
+      </ul>
+    </section>
+
+    <!-- Font Scheme -->
+    <section>
+      <h3>Font Scheme</h3>
+      <ul>
+        <li>Headings: Arial, Verdana, sans-serif</li>
+        <li>Body Text: Arial, Verdana, sans-serif</li>
+      </ul>
+    </section>
+
+    <!-- Tagline / Catchphrase -->
+    <section>
+      <h3>Tagline</h3>
+      <p><em>"Where beauty meets craftsmanship."</em></p>
+    </section>
+
+    <!-- Logo -->
+    <section>
+      <h3>Logo</h3>
+      <p>The "GlowingRosa" logo appears in the header and can be used as a favicon.</p>
+      <img src="images/glowingrosa-logo.png" alt="GlowingRosa Logo" width="200">
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div data-include="components/footer.html"></div>
+
+  <!-- Scripts -->
+  <script src="scripts/HTMLInclude.js"></script>
+  <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
