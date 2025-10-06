@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FizzBuzz 4 — Creative Edition</title>
+  <link rel="stylesheet" type="text/css" href="styles/default.css">
+  <style>
+    #fizzbuzzOutput { font-family: monospace; white-space: pre; }
+    .fizz { color: blue; font-weight: bold; }
+    .buzz { color: green; font-weight: bold; }
+    .bang { color: red; font-weight: bold; }
+    .output-item { margin: 2px 0; }
+  </style>
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+
+  <main>
+    <h2>FizzBuzz 4 — Creative Edition</h2>
+
+    <h3 id="greeting">Welcome to Hakima’s Custom FizzBuzz!</h3>
+
+    <form id="nameForm">
+      <input type="text" id="first_name" placeholder="First Name" required>
+      <input type="text" id="middle_initial" placeholder="M" maxlength="1">
+      <input type="text" id="last_name" placeholder="Last Name" required>
+
+      <hr>
+
+      <label>Divisor 1: <input type="number" id="div1" value="3" required></label>
+      <label>Word 1: <input type="text" id="word1" value="Exploration" required></label><br>
+
+      <label>Divisor 2: <input type="number" id="div2" value="5" required></label>
+      <label>Word 2: <input type="text" id="word2" value="Level-Up" required></label><br>
+
+      <label>Divisor 3: <input type="number" id="div3" value="7" required></label>
+      <label>Word 3: <input type="text" id="word3" value="BANG!" required></label><br>
+
+      <label>Total Count: <input type="number" id="total" value="125" required></label>
+      <label>Default: <input type="text" id="defaultWord" value="" maxlength="10"></label><br>
+
+      <button type="submit">Generate FizzBuzz</button>
+    </form>
+
+    <div id="fizzbuzzOutput"></div>
+  </main>
+
+  <div data-include="components/footer.html"></div>
+
+  <script src="scripts/HTMLInclude.js"></script>
+  <script src="scripts/fizzbuzz4.js"></script>
+</body>
+</html>
