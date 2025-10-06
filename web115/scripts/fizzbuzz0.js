@@ -53,7 +53,3 @@ document.getElementById("nameForm").onsubmit = function(event) {
   // Show FizzBuzz on page
   document.getElementById("fizzbuzzOutput").textContent = output;
 };
-
-
-
-
