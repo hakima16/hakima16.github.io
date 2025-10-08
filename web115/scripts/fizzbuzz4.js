@@ -1,3 +1,4 @@
+// Division check function
 function checkDivision(num, divisor) {
   return num % divisor === 0;
 }
@@ -57,8 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
       const span = document.createElement("div");
       span.className = "output-item " + classes.join(" ");
-      span.textContent = result.trim();
+      // PREPEND the number to the output
+      span.textContent = `${i}. ${result.trim()}`;
       outputElement.appendChild(span);
     }
   });
 });
+
