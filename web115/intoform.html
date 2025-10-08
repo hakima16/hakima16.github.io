@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction Form</title>
+  <link rel="stylesheet" href="styles/introform.css">
+</head>
+<body>
+
+  <!-- Pulls in header.html -->
+  <div data-include="components/header.html"></div>
+
+  <main>
+    <form id="introForm">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" value="Hakima Chabane" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" value="hello@glowingrosa.com" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" value="768-987-6534" required>
+
+      <label for="website">Website:</label>
+      <input type="url" id="website" value="https://glowingrosa.com" required>
+
+      <label for="background">Professional Background:</label>
+      <textarea id="background" rows="3" required>Founder of GlowingRosa, specializing in handcrafted hair accessories.</textarea>
+
+      <label for="education">Education:</label>
+      <textarea id="education" rows="2" required>Associate in Technology</textarea>
+
+      <label for="courses">Courses:</label>
+      <textarea id="courses" rows="4">WEB115, CTS-118, WEB-140</textarea>
+
+      <label for="skills">Skills/Certifications:</label>
+      <textarea id="skills" rows="3">HTML, CSS, JavaScript, Figma, Manual & Automated Testing</textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="output"></div>
+  </main>
+
+  <!-- Pulls in footer.html -->
+  <div data-include="components/footer.html"></div>
+
+  <!-- JavaScript files -->
+  <script src="scripts/HTMLInclude.js"></script>
+  <script src="scripts/script.js"></script>
+
+  <!-- Validator (optional) -->
+  <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
+  
+</body>
+</html>
