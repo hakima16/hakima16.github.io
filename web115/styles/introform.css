@@ -1,31 +1,28 @@
-/* CSS.css - Styling for Introduction Form page in WEB115 style */
+/* introform.css - WEB115 style for Introduction Form page */
 
-/* Body and background for WEB115 pages */
+/* Body and background */
 body {
-  background-color: #cce7ff; /* light blue background */
-  color: #111;               /* darker gray text */
+  background-color: #cce7ff; /* light blue */
+  color: #111;
   font-family: Arial, Verdana, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
-/* Center content */
-header, main, footer {
-  padding: 20px;
-  max-width: 900px;
+main {
+  max-width: 700px;
   margin: 0 auto;
 }
 
 /* Form styling */
 form#introForm {
-  background-color: #fff; /* white card */
+  background-color: #fff;
   color: #000;
   padding: 20px;
   border-radius: 10px;
-  max-width: 500px;
-  margin: 20px auto;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
 form#introForm label {
@@ -45,14 +42,14 @@ form#introForm textarea {
 
 form#introForm input:focus,
 form#introForm textarea:focus {
-  border-color: #003366; /* match nav color */
+  border-color: #003366;
   outline: none;
 }
 
 form#introForm button {
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #003366; /* dark blue button */
+  background-color: #003366;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -61,46 +58,34 @@ form#introForm button {
 }
 
 form#introForm button:hover {
-  background-color: #ff3399; /* pink accent on hover */
+  background-color: #ff3399;
 }
 
 /* Output box */
 #output {
-  margin: 20px auto;
   background-color: #fff;
   color: #000;
   padding: 20px;
   border-radius: 10px;
-  max-width: 500px;
-  line-height: 1.6;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
 #output h2 {
-  color: #003366; /* dark blue header for output */
+  color: #003366;
   font-size: 1.8em;
   margin-bottom: 15px;
 }
 
-#output ul.profile-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#output ul.profile-list > li {
-  margin-bottom: 10px;
-}
-
-#output ul.nested-list {
+#output ul {
   list-style-type: disc;
   margin-left: 20px;
 }
 
 #output a {
-  color: #003366; /* dark blue links */
+  color: #003366;
   text-decoration: none;
 }
 
 #output a:hover {
-  color: #ff3399; /* pink accent on hover */
+  color: #ff3399;
 }
