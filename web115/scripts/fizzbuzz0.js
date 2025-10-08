@@ -1,8 +1,8 @@
-// Simple FizzBuzz script
+// fizzbuzz0.js
 
 // Run when the form is submitted
 document.getElementById("nameForm").onsubmit = function(event) {
-  event.preventDefault(); // Prevent form from reloading the page
+  event.preventDefault(); // Prevent page reload
 
   // Get user input
   var firstName = document.getElementById("first_name").value;
@@ -36,20 +36,18 @@ document.getElementById("nameForm").onsubmit = function(event) {
 
   limit = parseInt(limit);
 
-  // Generate FizzBuzz output
+  // Generate Themed FizzBuzz0 output
   var output = "";
   for (var i = 1; i <= limit; i++) {
-    if (i % 15 === 0) {
-      output += i + " - FizzBuzz\n";
-    } else if (i % 3 === 0) {
-      output += i + " - Fizz\n";
-    } else if (i % 5 === 0) {
-      output += i + " - Buzz\n";
-    } else {
-      output += i + "\n";
-    }
+    // Define themed words
+    var themedWords = "Glazed Glory"; // you can choose another theme
+    // Determine if even or odd
+    var evenOdd = (i % 2 === 0) ? "even" : "odd";
+
+    // Add to output
+    output += i + ") " + themedWords + " - the number is " + evenOdd + "\n";
   }
 
-  // Show FizzBuzz on page
+  // Show output on page
   document.getElementById("fizzbuzzOutput").textContent = output;
 };
