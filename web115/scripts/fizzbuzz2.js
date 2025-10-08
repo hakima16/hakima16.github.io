@@ -49,7 +49,7 @@ document.getElementById("nameForm").onsubmit = function(event) {
     } else if (checkDivision(i, secondDivisor)) {
       output += i + " - Buzz\n";
     } else {
-      output += i + "\n";
+      output += i + " - Hop\n"; // Default word added here
     }
   }
 
