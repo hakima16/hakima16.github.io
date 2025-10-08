@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowingRosa | Where beauty meets craftsmanship</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #cce7ff; /* your site’s light blue */
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Open Sans', Arial, sans-serif;
+    }
+
+    .card {
+      width: 700px;
+      height: 350px;
+      background: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    /* Top half */
+    .top {
+      display: flex;
+      padding: 40px 50px 20px 50px;
+      align-items: flex-start;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .logo {
+      width: 150px; /* 👈 increased size */
+      height: auto;
+      margin-top: 25px; /* keeps it slightly lower for balance */
+    }
+
+    .text-block {
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    .brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      color: #b2214a;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .tagline {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1em;
+      color: #b2214a;
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    /* Bottom band */
+    .bottom {
+      background-color: #c40085; /* pink band */
+      color: #000; /* black writing */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 50px;
+      font-size: 1em;
+    }
+
+    .bottom a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .bottom a:hover {
+      text-decoration: underline;
+      color: #222;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    /* Validation link */
+    .validation {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .validation a {
+      color: #111;
+      text-decoration: none;
+    }
+
+    .validation a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="top">
+      <img src="rose.png" alt="Rose Logo" class="logo">
+      <div class="text-block">
+        <div class="brand">GlowingRosa</div>
+        <div class="tagline">Where beauty meets craftsmanship</div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="left">
+        <strong>Hakima Chabane</strong> — Founder, Hardworking Kangaroo<br>
+        768-987-6534<br>
+        <a href="mailto:hello@glowingrosa.com">hello@glowingrosa.com</a>
+      </div>
+
+      <div class="right">
+        123 Flower St, Charlotte<br>
+        NC 27869
+      </div>
+    </div>
+  </div>
+
+  <div class="validation">
+    <a href="https://validator.w3.org/">Validate HTML</a>
+  </div>
+</body>
+</html>
+
+
