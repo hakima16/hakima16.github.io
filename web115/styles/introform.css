@@ -17,7 +17,7 @@ header, main, footer {
 }
 
 /* Form styling */
-form#introForm {
+form#introform {
   background-color: #fff; /* white card */
   color: #000;
   padding: 20px;
@@ -27,14 +27,14 @@ form#introForm {
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
-form#introForm label {
+form#introform label {
   display: block;
   margin-top: 10px;
   font-weight: bold;
 }
 
-form#introForm input,
-form#introForm textarea {
+form#introform input,
+form#introform textarea {
   width: 100%;
   padding: 8px;
   margin-top: 4px;
@@ -42,13 +42,13 @@ form#introForm textarea {
   border-radius: 5px;
 }
 
-form#introForm input:focus,
-form#introForm textarea:focus {
+form#introform input:focus,
+form#introform textarea:focus {
   border-color: #003366; /* match nav color */
   outline: none;
 }
 
-form#introForm button {
+form#introform button {
   margin-top: 15px;
   padding: 10px 20px;
   background-color: #003366; /* dark blue button */
@@ -59,7 +59,7 @@ form#introForm button {
   font-weight: bold;
 }
 
-form#introForm button:hover {
+form#introform button:hover {
   background-color: #ff3399; /* pink accent on hover */
 }
 
@@ -90,7 +90,7 @@ form#introForm button:hover {
   margin-bottom: 10px;
 }
 
-#output ul.nested-list {
+#output .nested-list {
   list-style-type: disc;
   margin-left: 20px;
 }
