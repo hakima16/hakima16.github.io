@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const website = document.getElementById('website').value;
     const background = document.getElementById('background').value;
     const education = document.getElementById('education').value;
-    const courses = document.getElementById('courses').value.split(',').map(c => c.trim());
+    const courses = document.getElementById('courses').value.split(',').map((c) => c.trim());
     const skills = document.getElementById('skills').value;
 
     // Build output HTML
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     html += `<li><strong>Professional Background:</strong> ${background}</li>`;
     html += `<li><strong>Education:</strong> ${education}</li>`;
     html += `<li><strong>Courses:</strong><ul class="nested-list">`;
-    courses.forEach(course => { html += `<li>${course}</li>`; });
+    courses.forEach((course) => { html += `<li>${course}</li>`; });
     html += `</ul></li>`;
     html += `<li><strong>Skills/Certifications:</strong> ${skills}</li>`;
     html += `</ul>`;
