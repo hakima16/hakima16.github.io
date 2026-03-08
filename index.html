@@ -3,32 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My WEB115 GitHub Page</title>
+    <title>Hakima Chabane - Portfolio</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
     <header>
-        <h1>Hello Classmates!</h1>
+        <h1>Hakima chabane</h1>
     </header>
 
     <main>
-        <p>This is my very first real use on GitHub. I have so much info from Web110 class,</p>
-        <p>but this time I need to put it all together in my Web115 class.</p>
 
-        <!-- Link to your Web115 site -->
-        <p>
-			<a href="web115/index.html">Go to my Web115 site</a>
+        <!-- Welcome Section -->
+        <section id="welcome" class="section welcome-section">
+            <h2>Welcome</h2>
+            <p>
+                Hi, I’m <strong>Hakima Chabane</strong> — a dedicated student, problem solver, and multitasking professional balancing work, school, and family life.  
+                This site serves as my portfolio to showcase my skills, projects, and courses.  
+                Feel free to explore my work and connect with me — I’m always eager to grow and contribute.
+            </p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am Hakima Chabane.</p>
+            <p>I balance being a mom, working, and going to school, which has strengthened my organization, discipline, and perseverance.</p>
+            <p>This journey represents growth, dedication, and continuous learning <a href="web250/introduction.html">Read more about me</a></p>
 			
-			
-			
-			<a href="web250/index.html">Go to my Web250 site</a>
-		</p>
+        </section>
+
+       
+
+        <!-- Projects / Courses Section -->
+        <section id="projects" class="section courses-section">
+            <h2>Projects & Course Work</h2>
+            <div class="button-container">
+                <a href="web115/" class="btn">WEB115 Projects</a>
+                <a href="web250/" class="btn">WEB250 Projects</a>
+                <a href="web215/" class="btn">WEB215 Projects</a>
+            </div>
+        </section>
+
+        
+		<!-- Contact Section -->
+		<section id="contact" class="section">
+		<h2>Connect With Me</h2>
+		<div class="button-container">
+			<a href="mailto:hchaban0@email.cpcc.edu" class="btn">Email Me</a>
+			<a href="https://www.linkedin.com/feed/" target="_blank" class="btn">LinkedIn</a>
+			<a href="resume.pdf" target="_blank" class="btn">My Resume</a>
+		</div>
+		</section>
+
     </main>
 
     <footer>
-        <p>Page built by Your Name</p>
-        <!-- Validator script (optional for validation cloud) -->
+        <p>
+            <a href="https://github.com/Hakima" target="_blank">GitHub</a> |
+			<a href="https://hakima.github.io/" target="_blank">GitHub.io</a> |
+			<a href="web250/" target="_blank">WEB250</a> |
+			<a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> |
+			<a href="https://www.codecademy.com/" target="_blank">Codecademy</a> |
+			<a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+        </p>
+        <!-- Year appears on its own line -->
+        <p id="current-year"></p>
+		
+		<!-- Validation cloud / widget -->
         <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
+		
     </footer>
+
+    <!-- Link JavaScript File -->
+    <script src="script.js"></script>
+
 </body>
 </html>
-
