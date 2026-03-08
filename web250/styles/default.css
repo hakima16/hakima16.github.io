@@ -1,53 +1,76 @@
-/* default.css - simple styling for all WEB115 pages with light blue background */
-/* Body and background */
+/* ============================= */
+/*            Reset              */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/*             Body              */
+/* ============================= */
+
 body {
-  background-color: #cce7ff; /* light blue background */
-  color: #111;               /* darker gray text for better contrast */
-  font-family: Arial, Verdana, sans-serif; /* simple, readable fonts */
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b57edc; /* purple background */
+    color: #000000; /* black text */
+    line-height: 1.6;
 }
 
-/* Header, Main, Footer spacing */
-header, main, footer {
-  padding: 20px;
-  max-width: 900px;
-  margin: 0 auto; /* center content */
+/* ============================= */
+/*            Header             */
+/* ============================= */
+
+header {
+    text-align: center;
+    padding: 1.5rem;
 }
 
-/* Navigation links */
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* ============================= */
+/*           Navigation          */
+/* ============================= */
+
 nav a {
-  text-decoration: none; /* no underline except links */
-  color: #003366;        /* darker blue for better contrast */
-  margin-right: 15px;
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  color: #ff3399;        /* pink accent on hover */
+    text-decoration: underline;
 }
 
-/* Images */
-img {
-  display: block;
-  margin: 20px auto; /* center image */
-  max-width: 100%;   /* responsive */
-  height: auto;      /* keep aspect ratio */
+/* ============================= */
+/*             Main              */
+/* ============================= */
+
+main {
+    width: 80%;
+    max-width: 900px;
+    margin: 2rem auto;
 }
 
-/* Footer links */
-footer a {
-  text-decoration: underline; /* only links have underline */
-  color: #003366;             /* matches nav for consistency */
+main h2 {
+    margin-bottom: 1rem;
 }
 
-footer a:hover {
-  color: #ff3399;             /* pink accent on hover */
+main p {
+    margin-bottom: 1rem;
 }
 
-footer p {
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: #555;
+/* ============================= */
+/*            Footer             */
+/* ============================= */
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
