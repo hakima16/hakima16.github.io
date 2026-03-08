@@ -10,10 +10,13 @@
     --text-dark: #333333;
 }
 
-/* Reset (without universal selector) */
-body, h1, h2, h3, p, ul, li, header, section, footer, div, nav, main {
+/* Reset only essential elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, dl, dd {
     margin: 0;
     padding: 0;
+}
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -34,7 +37,7 @@ header {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-header h1 {
+.header-title {
     font-size: 2rem;
 }
 
@@ -42,8 +45,7 @@ header h1 {
 .section {
     padding: 3rem 2rem;
     margin: 2rem auto;
-    width: 90%;
-    max-width: 900px;
+    width: min(90%, 900px);
     text-align: center;
     background-color: var(--soft-lavender);
     border-radius: 15px;
@@ -55,7 +57,6 @@ header h1 {
     color: var(--white);
 }
 
-/* Headings */
 .section-title {
     margin-bottom: 1rem;
     color: var(--dark-purple);
