@@ -13,9 +13,15 @@ header {
     color: #F0F4F8; /* light text */
 }
 
-h1, h2 {
-    font-family: 'Georgia', serif; /* headings font */
-    color: #500879; /* bright accent heading color */
+h1 {
+    /* keep your existing h1 styles */
+    font-family: 'Georgia', serif;
+    color: #E0AAFF; /* whatever you have now */
+}
+
+h2 {
+    font-family: 'Georgia', serif; /* same font as h1 */
+    color: #500879; /* new deep purple for h2 */
 }
 
 /* Navigation */
