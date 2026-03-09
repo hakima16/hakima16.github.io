@@ -11,12 +11,9 @@
 }
 
 /* Reset */
-* {
+html, body {
     margin: 0;
     padding: 0;
-}
-
-*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -36,7 +33,7 @@ header {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-header h1 {
+h1 {
     font-size: 2rem;
 }
 
@@ -44,7 +41,6 @@ header h1 {
 .section {
     padding: 3rem 2rem;
     margin: 2rem auto;
-    width: 90%;
     max-width: 900px;
     text-align: center;
     background-color: var(--soft-lavender);
