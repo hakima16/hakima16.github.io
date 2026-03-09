@@ -2,7 +2,7 @@
 /*            Reset              */
 /* ============================= */
 
-* {
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,7 +28,7 @@ header {
     padding: 1.5rem;
 }
 
-header h1 {
+h1 {
     margin-bottom: 0.5rem;
 }
 
@@ -57,7 +57,7 @@ main {
     margin: 2rem auto;
 }
 
-main h2 {
+h2 {
     margin-bottom: 1rem;
 }
 
