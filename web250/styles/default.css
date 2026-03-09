@@ -1,76 +1,96 @@
-/* ============================= */
-/*            Reset              */
-/* ============================= */
-
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ============================= */
-/*             Body              */
-/* ============================= */
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #b57edc; /* purple background */
-    color: #000000; /* black text */
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #F0F4F8; /* light neutral for contrast */
+    color: #333333; /* dark text for readability */
     line-height: 1.6;
 }
 
-/* ============================= */
-/*            Header             */
-/* ============================= */
-
+/* Header */
 header {
     text-align: center;
     padding: 1.5rem;
+    background-color: #3C096C; /* Vivid Nightfall deep purple */
+    color: #F0F4F8; /* light text */
 }
 
-h1 {
-    margin-bottom: 0.5rem;
+h1, h2 {
+    font-family: 'Georgia', serif; /* headings font */
+    color: #E0AAFF; /* bright accent heading color */
 }
 
-/* ============================= */
-/*           Navigation          */
-/* ============================= */
-
+/* Navigation */
 nav a {
-    color: #000000;
+    color: #F0F4F8; /* white/light nav links */
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
 }
 
 nav a:hover {
+    color: #FF77FF; /* hover vivid pink accent */
     text-decoration: underline;
+    cursor: pointer;
 }
 
-/* ============================= */
-/*             Main              */
-/* ============================= */
-
+/* Main */
 main {
     width: 80%;
     max-width: 900px;
     margin: 2rem auto;
 }
 
-h2 {
-    margin-bottom: 1rem;
-}
-
 main p {
     margin-bottom: 1rem;
 }
 
-/* ============================= */
-/*            Footer             */
-/* ============================= */
+/* Figure & Image */
+figure {
+    text-align: center;
+    margin: 2rem 0;
+}
 
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #CCCCFF; /* soft pastel purple */
+}
+
+/* Links in content */
+a {
+    color: #7F00FF; /* vivid purple-blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF77FF; /* vivid pink accent */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Blockquote */
+blockquote {
+    text-align: center;
+    font-style: italic;
+    margin: 2rem 0;
+    color: #AA00FF; /* vivid accent */
+}
+
+blockquote br {
+    line-height: 1.5;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+    font-size: 0.9rem;
+    background-color: #3C096C; /* deep purple */
+    color: #F0F4F8; /* light text */
 }
