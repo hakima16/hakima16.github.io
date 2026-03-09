@@ -15,9 +15,15 @@ html, body {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #b57edc; /* purple background */
-    color: #000000; /* black text */
+    color: #1F3B4D; /* dark slate blue for text */
     line-height: 1.6;
 }
+
+/* ============================= */
+/*          Google Fonts         */
+/* ============================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
 /* ============================= */
 /*            Header             */
@@ -29,7 +35,15 @@ header {
 }
 
 h1 {
+    font-family: 'Roboto Slab', serif;
     margin-bottom: 0.5rem;
+    color: #FFB400; /* golden heading color */
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 1rem;
+    color: #FFB400; /* golden heading color */
 }
 
 /* ============================= */
@@ -37,7 +51,7 @@ h1 {
 /* ============================= */
 
 nav a {
-    color: #000000;
+    color: #FF6F61; /* coral links instead of black */
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
@@ -55,10 +69,6 @@ main {
     width: 80%;
     max-width: 900px;
     margin: 2rem auto;
-}
-
-h2 {
-    margin-bottom: 1rem;
 }
 
 main p {
