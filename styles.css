@@ -1,13 +1,13 @@
 /* ============================= */
-/*        Purple Palette         */
+/*        Simple Purple Theme    */
 /* ============================= */
+
 :root {
     --dark-purple: #4b0082;
     --medium-purple: #6a0dad;
-    --light-purple: #b57edc;
-    --soft-lavender: #f3e8ff;
+    --light-bg: #f3e8ff;
     --white: #ffffff;
-    --text-dark: #333333;
+    --text-dark: #222222;
 }
 
 /* Reset */
@@ -17,9 +17,10 @@ html, body {
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, var(--medium-purple), var(--light-purple));
+    background-color: var(--white);
     color: var(--text-dark);
     line-height: 1.6;
 }
@@ -29,61 +30,63 @@ header {
     background-color: var(--dark-purple);
     color: var(--white);
     text-align: center;
-    padding: 2rem 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 1rem 0.5rem;
 }
 
-h1 {
-    font-size: 2rem;
+/* Main layout */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
 }
 
 /* Sections */
 .section {
-    padding: 3rem 2rem;
-    margin: 2rem auto;
-    max-width: 900px;
-    text-align: center;
-    background-color: var(--soft-lavender);
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background-color: var(--light-bg);
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border-radius: 8px;
+    text-align: left;
 }
 
+/* Welcome section (high contrast) */
 .welcome-section {
-    background: linear-gradient(135deg, var(--light-purple), var(--medium-purple));
-    color: var(--white);
-}
-
-/* Headings */
-.section-title {
-    margin-bottom: 1rem;
-    color: var(--dark-purple);
-}
-
-.welcome-section .section-title {
+    background-color: var(--medium-purple);
     color: var(--white);
 }
 
 /* Buttons */
 .button-container {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .btn {
     display: inline-block;
-    margin: 1rem;
-    padding: 0.9rem 2rem;
+    margin: 0.4rem;
+    padding: 0.5rem 1.4rem;
     background-color: var(--medium-purple);
     color: var(--white);
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 20px;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover {
     background-color: var(--dark-purple);
-    transform: translateY(-4px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Links */
+a {
+    color: var(--medium-purple);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -91,16 +94,11 @@ footer {
     background-color: var(--dark-purple);
     color: var(--white);
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
 }
 
 footer a {
-    color: var(--light-purple);
-    text-decoration: none;
+    color: var(--white);
     font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
