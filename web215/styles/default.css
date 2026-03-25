@@ -14,31 +14,30 @@ header {
 }
 
 h1 {
-    /* keep your existing h1 styles */
     font-family: 'Georgia', serif;
-    color: #E0AAFF; /* whatever you have now */
+    color: #E0AAFF; /* heading accent */
 }
 
 h2 {
-    font-family: 'Georgia', serif; /* same font as h1 */
-    color: #500879; /* new deep purple for h2 */
+    font-family: 'Georgia', serif;
+    color: #500879; /* deep purple for subheadings */
 }
 
 /* Navigation */
 nav a {
-    color: #F0F4F8; /* white/light nav links */
+    color: #F0F4F8; /* light links on dark background */
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #FF77FF; /* hover vivid pink accent */
+    color: #FFD700; /* bright gold hover for high contrast */
     text-decoration: underline;
     cursor: pointer;
 }
 
-/* Main */
+/* Main Content */
 main {
     width: 80%;
     max-width: 900px;
@@ -49,7 +48,7 @@ main p {
     margin-bottom: 1rem;
 }
 
-/* Figure & Image */
+/* Figures & Images */
 figure {
     text-align: center;
     margin: 2rem 0;
@@ -91,12 +90,23 @@ blockquote br {
     line-height: 1.5;
 }
 
-/* Footer */
+/* Footer - Accessible Contrast */
 footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
     font-size: 0.9rem;
     background-color: #3C096C; /* deep purple */
-    color: #F0F4F8; /* light text */
+    color: #FFFFFF; /* pure white for max contrast */
+}
+
+footer nav a {
+    color: #FFFFFF; /* pure white links */
+    font-weight: bold;
+}
+
+footer nav a:hover {
+    color: #FFD700; /* bright gold hover for high contrast */
+    text-decoration: underline;
+    cursor: pointer;
 }
