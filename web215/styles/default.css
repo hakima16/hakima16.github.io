@@ -1,56 +1,44 @@
-/* =========================
-   Base Body Styles
-========================= */
 body {
     font-family: 'Arial', Helvetica, sans-serif;
     background-color: #F0F4F8; /* light neutral for contrast */
-    color: #1C1C1C; /* dark text for readability */
+    color: #333333; /* dark text for readability */
     line-height: 1.6;
-    margin: 0;
 }
 
-/* =========================
-   Header
-========================= */
+/* Header */
 header {
     text-align: center;
     padding: 1.5rem;
-    background-color: #3C096C; /* deep purple */
-    color: #FFFFFF; /* pure white for max contrast */
+    background-color: #3C096C; /* Vivid Nightfall deep purple */
+    color: #F0F4F8; /* light text */
 }
 
 h1 {
+    /* keep your existing h1 styles */
     font-family: 'Georgia', serif;
-    color: #FFFFFF; /* white on dark purple */
+    color: #E0AAFF; /* whatever you have now */
 }
 
 h2 {
-    font-family: 'Georgia', serif;
-    color: #FFFFFF; /* white headings for accessibility */
+    font-family: 'Georgia', serif; /* same font as h1 */
+    color: #500879; /* new deep purple for h2 */
 }
 
-/* =========================
-   Navigation Links
-========================= */
+/* Navigation */
 nav a {
-    color: #FFFFFF; /* white links on dark background */
+    color: #F0F4F8; /* white/light nav links */
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
-    font-size: 1rem;
 }
 
-nav a:hover,
-nav a:focus {
-    color: #FFFF00; /* bright yellow hover for max contrast */
+nav a:hover {
+    color: #FF77FF; /* hover vivid pink accent */
     text-decoration: underline;
-    outline: none;
     cursor: pointer;
 }
 
-/* =========================
-   Main Content
-========================= */
+/* Main */
 main {
     width: 80%;
     max-width: 900px;
@@ -59,23 +47,9 @@ main {
 
 main p {
     margin-bottom: 1rem;
-    color: #1C1C1C; /* ensure strong contrast against background */
 }
 
-a {
-    color: #0000CC; /* accessible blue for inline links */
-    text-decoration: none;
-}
-
-a:hover,
-a:focus {
-    color: #FFCC00; /* accessible yellow hover */
-    text-decoration: underline;
-}
-
-/* =========================
-   Figures & Images
-========================= */
+/* Figure & Image */
 figure {
     text-align: center;
     margin: 2rem 0;
@@ -90,44 +64,39 @@ figure img {
 figcaption {
     font-style: italic;
     margin-top: 0.5rem;
-    color: #000000; /* black for strong contrast */
+    color: #730d85; /* soft pastel purple */
 }
 
-/* =========================
-   Blockquotes
-========================= */
+/* Links in content */
+a {
+    color: #7F00FF; /* vivid purple-blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF77FF; /* vivid pink accent */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Blockquote */
 blockquote {
     text-align: center;
     font-style: italic;
     margin: 2rem 0;
-    color: #000000; /* black for strong contrast */
+    color: #AA00FF; /* vivid accent */
 }
 
 blockquote br {
     line-height: 1.5;
 }
 
-/* =========================
-   Footer - Fully Accessible
-========================= */
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    font-size: 0.9rem; /* small text, must meet AAA */
-    background-color: #3C096C; /* dark purple background */
-    color: #FFFFFF; /* white text */
-}
-
-footer nav a {
-    color: #FFFFFF; /* white links */
-    font-weight: bold;
-}
-
-footer nav a:hover,
-footer nav a:focus {
-    color: #FFFF00; /* bright yellow hover */
-    text-decoration: underline;
-    cursor: pointer;
-    outline: none;
+    font-size: 0.9rem;
+    background-color: #3C096C; /* deep purple */
+    color: #F0F4F8; /* light text */
 }
