@@ -1,44 +1,55 @@
+/* =========================
+   Base Body Styles
+========================= */
 body {
     font-family: 'Arial', Helvetica, sans-serif;
     background-color: #F0F4F8; /* light neutral for contrast */
-    color: #333333; /* dark text for readability */
+    color: #1C1C1C; /* dark text for readability */
     line-height: 1.6;
+    margin: 0;
 }
 
-/* Header */
+/* =========================
+   Header
+========================= */
 header {
     text-align: center;
     padding: 1.5rem;
-    background-color: #3C096C; /* Vivid Nightfall deep purple */
-    color: #F0F4F8; /* light text */
+    background-color: #3C096C; /* deep purple */
+    color: #FFFFFF; /* white text for maximum contrast */
 }
 
 h1 {
-    /* keep your existing h1 styles */
     font-family: 'Georgia', serif;
-    color: #E0AAFF; /* whatever you have now */
+    color: #FFFFFF; /* white for accessibility */
 }
 
 h2 {
-    font-family: 'Georgia', serif; /* same font as h1 */
-    color: #500879; /* new deep purple for h2 */
+    font-family: 'Georgia', serif;
+    color: #E0AAFF; /* slightly darker pastel for contrast with background */
 }
 
-/* Navigation */
+/* =========================
+   Navigation Links
+========================= */
 nav a {
-    color: #F0F4F8; /* white/light nav links */
+    color: #FFFFFF; /* white links on dark header */
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #FF77FF; /* hover vivid pink accent */
+nav a:hover,
+nav a:focus {
+    color: #FFFF00; /* bright yellow for high-contrast hover */
     text-decoration: underline;
     cursor: pointer;
+    outline: none;
 }
 
-/* Main */
+/* =========================
+   Main Content
+========================= */
 main {
     width: 80%;
     max-width: 900px;
@@ -47,9 +58,25 @@ main {
 
 main p {
     margin-bottom: 1rem;
+    color: #1C1C1C; /* ensure high contrast on light background */
 }
 
-/* Figure & Image */
+/* Links in content */
+a {
+    color: #0000CC; /* accessible blue */
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #FFCC00; /* high-contrast hover yellow */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* =========================
+   Figures & Images
+========================= */
 figure {
     text-align: center;
     margin: 2rem 0;
@@ -64,39 +91,44 @@ figure img {
 figcaption {
     font-style: italic;
     margin-top: 0.5rem;
-    color: #730d85; /* soft pastel purple */
+    color: #000000; /* black for strong contrast */
 }
 
-/* Links in content */
-a {
-    color: #7F00FF; /* vivid purple-blue */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #FF77FF; /* vivid pink accent */
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/* Blockquote */
+/* =========================
+   Blockquotes
+========================= */
 blockquote {
     text-align: center;
     font-style: italic;
     margin: 2rem 0;
-    color: #AA00FF; /* vivid accent */
+    color: #000000; /* black for maximum contrast */
 }
 
 blockquote br {
     line-height: 1.5;
 }
 
-/* Footer */
+/* =========================
+   Footer
+========================= */
 footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    font-size: 0.9rem;
-    background-color: #3C096C; /* deep purple */
-    color: #F0F4F8; /* light text */
+    font-size: 0.9rem; /* small text, AAA compliant */
+    background-color: #3C096C; /* deep purple background */
+    color: #FFFFFF; /* white text */
+}
+
+footer nav a {
+    color: #FFFFFF; /* white links */
+    font-weight: bold;
+}
+
+footer nav a:hover,
+footer nav a:focus {
+    color: #FFFF00; /* bright yellow hover for max contrast */
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
 }
