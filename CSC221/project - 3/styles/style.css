@@ -1,0 +1,74 @@
+/* Soft pastel blue background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #dfeffc, #f2f7fb);
+    display: flex;
+    justify-content: center;
+}
+
+/* Main centered page */
+.page {
+    width: 90%;
+    max-width: 750px;
+    background: #fdfaf4; /* soft cream background */
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 15px;
+    border: 2px solid #e6e2da;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+
+/* Family photo box */
+.family-photo {
+    width: 100%;
+    height: 260px; /* fixed height box */
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Make the image fit perfectly */
+.family-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills the box perfectly */
+    display: block;
+}
+
+/* Main title box */
+.title-box {
+    background: #2c3e50;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Section title boxes */
+.section-title {
+    background: #e8eef5;
+    padding: 10px 14px;
+    border-left: 6px solid #2c3e50;
+    border-radius: 6px;
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Card styling */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+
