@@ -4,66 +4,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hakima Chabane's Helpful Crane | WEB25 | FizzBuzz</title>
+  <title>Hakima Chabane's Helpful Crane | WEB250 | FizzBuzz</title>
 
-  <!-- main site CSS -->
   <link rel="stylesheet" type="text/css" href="styles/default.css" />
 </head>
 
 <body>
 
-<!-- HEADER -->
 <div data-include="components/header.html"></div>
 
 <main>
     <h2>FizzBuzz!</h2>
 
     <form id="fbForm">
-        <!-- ROW 1: NAME FIELDS -->
+
+        <!-- NAME ROW -->
         <div class="row">
-            <input type="text" id="fname" placeholder="First Name" required>
-            <input type="text" id="minit" placeholder="M.I." maxlength="1">
-            <input type="text" id="lname" placeholder="Last Name" required>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" required>
+
+            <label for="minit">M.I.:</label>
+            <input type="text" id="minit" maxlength="1">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" required>
         </div>
 
-        <!-- ROW 2: DEFAULT WORD + COUNT -->
+        <!-- DEFAULT WORD + COUNT -->
         <div class="row">
-            <input type="text" id="defaultWord" value="Pink Crane" placeholder="Default Word">
-            <input type="number" id="count" value="111" min="1">
+            <label for="defaultWord">Default Word:</label>
+            <input type="text" id="defaultWord" value="Pink Crane">
+
+            <label for="count">Count To:</label>
+            <input type="number" id="count" value="20" min="1">
         </div>
 
-        <!-- ROW 3: WORDS + DIVISORS -->
+        <!-- WORD 1 -->
         <div class="row">
-            <input type="text" id="word1" value="Sparkle Wing" placeholder="Word 1">
-            <input type="number" id="div1" value="3" placeholder="Divisor 1">
+            <label for="word1">First Word:</label>
+            <input type="text" id="word1" value="Sparkle Wing">
 
-            <input type="text" id="word2" value="Blossom Feather" placeholder="Word 2">
-            <input type="number" id="div2" value="5" placeholder="Divisor 2">
+            <label for="div1">First Number:</label>
+            <input type="number" id="div1" value="3">
+        </div>
 
-            <input type="text" id="word3" value="Shine Sky" placeholder="Word 3">
-            <input type="number" id="div3" value="7" placeholder="Divisor 3">
+        <!-- WORD 2 -->
+        <div class="row">
+            <label for="word2">Second Word:</label>
+            <input type="text" id="word2" value="Blossom Feather">
+
+            <label for="div2">Second Number:</label>
+            <input type="number" id="div2" value="5">
+        </div>
+
+        <!-- WORD 3 -->
+        <div class="row">
+            <label for="word3">Third Word:</label>
+            <input type="text" id="word3" value="Shine Sky">
+
+            <label for="div3">Third Number:</label>
+            <input type="number" id="div3" value="7">
+        </div>
+
+        <!-- SHOW NUMBERS OPTION -->
+        <div class="row">
+            <label>
+                <input type="checkbox" id="showNumbers" checked>
+                Show Numbers
+            </label>
         </div>
 
         <button type="submit">Generate</button>
     </form>
 
-    
     <p id="welcome"></p>
-
     <ul id="results"></ul>
 </main>
 
-<!-- FOOTER -->
 <div data-include="components/footer.html"></div>
 
-<!-- HTML Include Script -->
 <script src="scripts/HTMLInclude.js"></script>
-
-<!-- FizzBuzz JS -->
 <script src="scripts/fizzbuzz.js"></script>
-
-<!-- Validator Cloud -->
 <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
+
+
+
